@@ -22,6 +22,7 @@ about.html
 ![about.html](images/about.html%20shot.png)
 contact.html
 ![contact.html](images/contact.html%20shot.png)
+![contact.html](images/contact.html%20shot2.png)
 services.html
 ![services.html](images/services.html%20shot.png)
 
