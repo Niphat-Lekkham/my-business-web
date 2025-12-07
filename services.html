@@ -6,29 +6,66 @@
     <title>Services</title>
   </head>
   <body>
-    <header><h1>Services</h1></header>
-    
-    <h3>ค้นหาสินค้า</h3>
-    <textarea name="Search" id="Search"></textarea><br />>
-    <button type="submit">ค้นหา</button>
-
-    <h3>หมวดหมู่สินค้า</h3>
-    <label for="หมวดหมู่สินค้า"></label>
-    <select name="Category" id="หมวดหมู่สินค้า">
-      <option value="">-หมวดหมู่สินค้า-</option>
-      <option value="">ความงามและของใช้ส่วนตัว</option>
-      <option value="">อุปกรณ์อิเล็กทรอนิกส์</option>
-      <option value="">เครื่องใช้ไฟฟ้าภายในบ้าน</option>
-    </select>
-
-    <fieldset>
-      <legend><h3>บริการและโปรโมชั่น</h3></legend>
-      <input type="checkbox" id="ส่งฟรี" name="บริการและโปรโมชั่น" />
-      <label for="ส่งฟรี">ส่งฟรี</label>
-      <input type="checkbox" id="ผ่อน 0% SpayLater" name="บริการและโปรโมชั่น" />
-      <label for="ผ่อน 0% SpayLater">ผ่อน 0% SpayLater</label>
-      <input type="checkbox" id="พร้อมส่วนลด" name="บริการและโปรโมชั่น" />
-      <label for="พร้อมส่วนลด">พร้อมส่วนลด</label>
-    </fieldset>
+    <!--Service System-->
+    <header><h1>บริการ</h1></header>
+    <section class="ค้นหาสินค้า">
+      <h3>ค้นหาสินค้า</h3>
+      <!--Search System-->
+      <textarea name="Search" id="Search"></textarea><br />>
+      <button type="submit">ค้นหา</button>
+    </section>
+    <section class="หมวดหมู่สินค้า">
+      <h3>หมวดหมู่สินค้า</h3>
+      <!--Category System-->
+      <label for="หมวดหมู่สินค้า"></label>
+      <select name="Category" id="หมวดหมู่สินค้า">
+        <option value="">-หมวดหมู่สินค้า-</option>
+        <option value="">ความงามและของใช้ส่วนตัว</option>
+        <option value="">อุปกรณ์อิเล็กทรอนิกส์</option>
+        <option value="">เครื่องใช้ไฟฟ้าภายในบ้าน</option>
+      </select>
+    </section>
+    <section class="บริการและโปรโมชั่น">
+      <fieldset>
+        <legend><h3>บริการและโปรโมชั่น</h3></legend>
+        <!--Service and Promotion System-->
+        <input type="checkbox" id="ส่งฟรี" name="บริการและโปรโมชั่น" />
+        <label for="ส่งฟรี">ส่งฟรี</label>
+        <input
+          type="checkbox"
+          id="ผ่อน 0% SpayLater"
+          name="บริการและโปรโมชั่น"
+        />
+        <label for="ผ่อน 0% SpayLater">ผ่อน 0% SpayLater</label>
+        <input type="checkbox" id="พร้อมส่วนลด" name="บริการและโปรโมชั่น" />
+        <label for="พร้อมส่วนลด">พร้อมส่วนลด</label>
+      </fieldset>
+    </section>
+    <!--Promotion Table-->
+    <table border="1" class="แพ็กเกจโปรโมชั่น">
+      <tr>
+        <td><label for="Flash sale">Flash sale</label></td>
+        <td><label for="ข้อมูลโปรโมชั่น">ลดด่วนตอนนี้</label></td>
+      </tr>
+      <tr>
+        <td><label for="Shopee Mall">Shopee Mall</label></td>
+        <td>
+          <label for="ข้อมูลโปรโมชั่น"
+            >ดีลพิเศษแบรนด์ชั้นนำ ของแท้ 100% คืนเงิน/สินค้าใน 15วัน</label
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="โค้ดแบรนด์ลดเพื่ม 30%">โค้ดแบรนด์ลดเพื่ม 30%</label>
+        </td>
+        <td>
+          <label for="ข้อมูลโปรโมชั่น"
+            >ของแท้ 100% การรันตีคืนเงิน 2 เท่า/ส่งฟรีทั้วไทย เมื่อช้อปครบ
+            200.-</label
+          >
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
