@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>Shopee</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--Header-->
-    <header><h1>Shopee</h1></header>
-    <figure>
-      <img src="images/Shopee_logo.svg.webp" alt="Shopee Logo" width="100" />
-      <figcaption>Shopee Logo</figcaption>
-      <!--Navigation menu-->
-    </figure>
-    <ul>
-      <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="about.html">เกี่ยวกับ</a></li>
-      <li><a href="services.html">บริการ</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
-    </ul>
+    <header>
+      <h1>
+        Shopee
+        <img
+          src="images/1656180842shopee-icon.webp"
+          alt="Shopee Logo"
+          class="logo"
+        />
+      </h1>
+      <div class="header-right">
+        <input type="text" placeholder="ค้นหาสินค้า..." />
+        <button type="submit">ค้นหา</button>
+      </div>
+    </header>
+    <!--Navigation menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
     <!--Service System-->
     <header><h1>บริการ</h1></header>
-    <section class="ค้นหาสินค้า">
-      <h3>ค้นหาสินค้า</h3>
-      <!--Search System-->
-      <textarea name="Search" id="Search"></textarea><br />>
-      <button type="submit">ค้นหา</button>
-    </section>
     <section class="หมวดหมู่สินค้า">
       <h3>หมวดหมู่สินค้า</h3>
       <!--Category System-->
@@ -41,17 +47,12 @@
     <section class="บริการและโปรโมชั่น">
       <fieldset>
         <legend><h3>บริการและโปรโมชั่น</h3></legend>
-        <!--Service and Promotion System-->
-        <input type="checkbox" id="ส่งฟรี" name="บริการและโปรโมชั่น" />
-        <label for="ส่งฟรี">ส่งฟรี</label>
-        <input
-          type="checkbox"
-          id="ผ่อน 0% SpayLater"
-          name="บริการและโปรโมชั่น"
-        />
-        <label for="ผ่อน 0% SpayLater">ผ่อน 0% SpayLater</label>
-        <input type="checkbox" id="พร้อมส่วนลด" name="บริการและโปรโมชั่น" />
-        <label for="พร้อมส่วนลด">พร้อมส่วนลด</label>
+
+        <label> <input type="checkbox" /> ส่งฟรี </label>
+
+        <label> <input type="checkbox" /> ผ่อน 0% SpayLater </label>
+
+        <label> <input type="checkbox" /> พร้อมส่วนลด </label>
       </fieldset>
     </section>
     <!--Promotion Table-->
