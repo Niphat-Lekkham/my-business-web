@@ -6,9 +6,9 @@
     <title>Shopee</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="top">
     <!--Header-->
-    <header>
+    <header id="header">
       <div class="header-left">
         <h1>Shopee</h1>
         <img
@@ -20,7 +20,7 @@
 
       <div class="header-right">
         <input type="text" placeholder="ค้นหาสินค้า..." />
-        <button type="submit">ค้นหา</button>
+        <button type="button" class="btn">ค้นหา</button>
       </div>
     </header>
     <!--Navigation menu-->
@@ -41,10 +41,16 @@
           อัพเดททุกวัน ช้อปเลย. Shopee เพลิดเพลินกับการช้อปปิ้งออนไลน์
           แบบไม่มีสะดุด สินค้าหลากหลาย มีทุกหมวดหมู่ ช้อปเลย.
         </p>
+        <button class="btn btn-light">ช้อปเลย</button>
       </div>
     </section>
+    <figure class="image-hover">
+      <a href="https://shopee.co.th/web"
+        ><img src="images/Screenshot 2025-12-19 034605.png" alt=""
+      /></a>
+    </figure>
     <!--Featured services-->
-    <h3>หมวดหมู่สินค้า</h3>
+    <h2>หมวดหมู่สินค้า</h2>
     <label for="หมวดหมู่สินค้า"></label>
     <select name="Category" id="หมวดหมู่สินค้า">
       <option value="">-หมวดหมู่สินค้า-</option>
@@ -53,18 +59,29 @@
       <option value="">เครื่องใช้ไฟฟ้าภายในบ้าน</option>
     </select>
 
-    <section class="บริการและโปรโมชั่น">
-      <fieldset>
-        <legend><h3>บริการและโปรโมชั่น</h3></legend>
+    <section class="section">
+      <div class="promo-card">
+        <h2 class="promo-title">บริการและโปรโมชั่น</h2>
 
-        <label> <input type="checkbox" /> ส่งฟรี </label>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>ส่งฟรี</span>
+        </label>
 
-        <label> <input type="checkbox" /> ผ่อน 0% SpayLater </label>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>ผ่อน 0% SpayLater</span>
+        </label>
 
-        <label> <input type="checkbox" /> พร้อมส่วนลด </label>
-      </fieldset>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>พร้อมส่วนลด</span>
+        </label>
+      </div>
     </section>
+
     <!--Footer-->
-    <footer>© 2025 Shopee. All Rights Reserved</footer>
+    <footer id="footer">© 2025 Shopee. All Rights Reserved</footer>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
   </body>
 </html>
