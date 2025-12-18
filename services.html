@@ -8,18 +8,18 @@
   </head>
   <body>
     <!--Header-->
-    <header>
-      <h1>
-        Shopee
+    <header id="header">
+      <div class="header-left">
+        <h1>Shopee</h1>
         <img
           src="images/1656180842shopee-icon.webp"
           alt="Shopee Logo"
           class="logo"
         />
-      </h1>
+      </div>
       <div class="header-right">
         <input type="text" placeholder="ค้นหาสินค้า..." />
-        <button type="submit">ค้นหา</button>
+        <button type="buton" class="btn">ค้นหา</button>
       </div>
     </header>
     <!--Navigation menu-->
@@ -32,9 +32,13 @@
       </ul>
     </nav>
     <!--Service System-->
-    <header><h1>บริการ</h1></header>
+    <main class="container">
+      <section class="card section">
+        <header><h1 class="title">บริการ</h1></header>
+      </section>
+    </main>
     <section class="หมวดหมู่สินค้า">
-      <h3>หมวดหมู่สินค้า</h3>
+      <h2>หมวดหมู่สินค้า</h2>
       <!--Category System-->
       <label for="หมวดหมู่สินค้า"></label>
       <select name="Category" id="หมวดหมู่สินค้า">
@@ -44,43 +48,53 @@
         <option value="">เครื่องใช้ไฟฟ้าภายในบ้าน</option>
       </select>
     </section>
-    <section class="บริการและโปรโมชั่น">
-      <fieldset>
-        <legend><h3>บริการและโปรโมชั่น</h3></legend>
+    <section class="section">
+      <div class="promo-card">
+        <h2 class="promo-title">บริการและโปรโมชั่น</h2>
 
-        <label> <input type="checkbox" /> ส่งฟรี </label>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>ส่งฟรี</span>
+        </label>
 
-        <label> <input type="checkbox" /> ผ่อน 0% SpayLater </label>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>ผ่อน 0% SpayLater</span>
+        </label>
 
-        <label> <input type="checkbox" /> พร้อมส่วนลด </label>
-      </fieldset>
+        <label class="promo-item">
+          <input type="checkbox" />
+          <span>พร้อมส่วนลด</span>
+        </label>
+      </div>
     </section>
     <!--Promotion Table-->
-    <table border="1" class="แพ็กเกจโปรโมชั่น">
-      <tr>
-        <td><label for="Flash sale">Flash sale</label></td>
-        <td><label for="ข้อมูลโปรโมชั่น">ลดด่วนตอนนี้</label></td>
-      </tr>
-      <tr>
-        <td><label for="Shopee Mall">Shopee Mall</label></td>
-        <td>
-          <label for="ข้อมูลโปรโมชั่น"
-            >ดีลพิเศษแบรนด์ชั้นนำ ของแท้ 100% คืนเงิน/สินค้าใน 15วัน</label
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="โค้ดแบรนด์ลดเพื่ม 30%">โค้ดแบรนด์ลดเพื่ม 30%</label>
-        </td>
-        <td>
-          <label for="ข้อมูลโปรโมชั่น"
-            >ของแท้ 100% การรันตีคืนเงิน 2 เท่า/ส่งฟรีทั้วไทย เมื่อช้อปครบ
-            200.-</label
-          >
-        </td>
-      </tr>
+    <table class="promo-table">
+      <thead>
+        <tr>
+          <th>แพ็กเกจ</th>
+          <th>รายละเอียดโปรโมชั่น</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="promo-name">Flash Sale</td>
+          <td>ลดด่วนตอนนี้</td>
+        </tr>
+        <tr>
+          <td class="promo-name">Shopee Mall</td>
+          <td>ดีลพิเศษแบรนด์ชั้นนำ ของแท้ 100% คืนเงิน/สินค้าใน 15 วัน</td>
+        </tr>
+        <tr>
+          <td class="promo-name">โค้ดแบรนด์ลดเพิ่ม 30%</td>
+          <td>
+            ของแท้ 100% การันตีคืนเงิน 2 เท่า / ส่งฟรีทั่วไทย เมื่อช้อปครบ 200
+            บาท
+          </td>
+        </tr>
+      </tbody>
     </table>
-    <footer>© 2025 Shopee. All Rights Reserved</footer>
+    <footer id="footer">© 2025 Shopee. All Rights Reserved</footer>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
   </body>
 </html>
