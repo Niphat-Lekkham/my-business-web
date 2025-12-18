@@ -8,7 +8,7 @@
   </head>
   <body>
     <!--Header-->
-    <header>
+    <header id="header">
       <div class="header-left">
         <h1>Shopee</h1>
         <img
@@ -16,7 +16,8 @@
           alt="Shopee Logo"
           class="logo"
         />
-      </header>
+      </div>
+    </header>
     <!--Navigation menu-->
     <nav>
       <ul>
@@ -26,50 +27,53 @@
         <li><a href="contact.html">ติดต่อ</a></li>
       </ul>
     </nav>
-    <!--About Shopee-->
-    <header><h1>About Shopee</h1></header>
-    <p>
-      Launched in 2015, it is a platform tailored for the region, providing
-      customers with an easy, secure and fast online shopping experience through
-      strong payment and fulfillment support. We believe online shopping should
-      be accessible, easy and enjoyable. This is the vision Shopee aspires to
-      deliver on the platform, every single day.
-    </p>
-    <!--Team Member-->
-    <section class="Team">
-      <h2>Our Team</h2>
-      <figure>
-        <img
-          src="images/DC855E261B314C6EA2F3E4C8439757EE.jpg"
-          alt="CEO"
-          width="200x"
-        />
-        <h3>Chris Fehn</h3>
-        <p>CEO</p>
-      </figure>
-    </section>
-    <!--Mission/Vision-->
-    <h3>Our Mission</h3>
-    <p>
-      To Internet users across the region, Shopee offers a one-stop online
-      shopping experience that provides a wide selection of products, a social
-      community for exploration, and seamless fulfilment services.
-    </p>
-    <h3>Our Vision</h3>
-    <p>
-      We believe in the transformative power of technology and want to change
-      the world for the better by providing a platform to connect buyers and
-      sellers within one community.
-    </p>
-    <!--Back to Shopee-->
-    <nav>
-      <ul>
-        <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="about.html">เกี่ยวกับ</a></li>
-        <li><a href="services.html">บริการ</a></li>
-        <li><a href="contact.html">ติดต่อ</a></li>
-      </ul>
-    </nav>
-    <footer>© 2025 Shopee. All Rights Reserved</footer>
+    <main class="container">
+      <!--About Shopee-->
+      <section class="card">
+        <header><h1 class="title">About Shopee</h1></header>
+        <p>
+          Launched in 2015, it is a platform tailored for the region, providing
+          customers with an easy, secure and fast online shopping experience
+          through strong payment and fulfillment support. We believe online
+          shopping should be accessible, easy and enjoyable. This is the vision
+          Shopee aspires to deliver on the platform, every single day.
+        </p>
+      </section>
+      <!--Team Member-->
+      <section class="card section team">
+        <h2 class="team-title">Our Team</h2>
+
+        <figure class="team-member">
+          <img
+            src="images/DC855E261B314C6EA2F3E4C8439757EE.jpg"
+            alt="CEO"
+            class="team-image"
+          />
+          <figcaption class="team-info">
+            <h3>Chris Fehn</h3>
+            <p>CEO</p>
+          </figcaption>
+        </figure>
+      </section>
+      <!--Mission/Vision-->
+      <section class="card section">
+        <h2>Our Mission</h2>
+        <p>
+          To Internet users across the region, Shopee offers a one-stop online
+          shopping experience that provides a wide selection of products, a
+          social community for exploration, and seamless fulfilment services.
+        </p>
+      </section>
+      <section class="card section">
+        <h2>Our Vision</h2>
+        <p>
+          We believe in the transformative power of technology and want to
+          change the world for the better by providing a platform to connect
+          buyers and sellers within one community.
+        </p>
+      </section>
+    </main>
+    <footer id="footer">© 2025 Shopee. All Rights Reserved</footer>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
   </body>
 </html>
