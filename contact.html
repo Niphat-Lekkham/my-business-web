@@ -9,9 +9,16 @@
   </head>
   <body>
     <!--Header-->
-    <header><h1>Shopee
-      <img src="images/1656180842shopee-icon.webp" alt="Shopee Logo" class="logo" />
-    </h1></header>
+    <header id="header">
+      <div class="header-left">
+        <h1>Shopee</h1>
+        <img
+          src="images/1656180842shopee-icon.webp"
+          alt="Shopee Logo"
+          class="logo"
+        />
+        </div>
+      </header>
     <!--Navigation menu-->
     <nav>
       <ul>
@@ -21,62 +28,69 @@
         <li><a href="contact.html">ติดต่อ</a></li>
       </ul>
     </nav>
+    <main class="container">
     <!--Contact Form-->
-    <header><h1>Contact Form</h1></header>
-    <form class="Contact-Form" action="" method="post"></form>
-    <fieldset style="width: 500px; height: 270px;"> 
-        <legend>ข้อมูลส่วนตัว</legend>
-        <label for="fname">ชื่อจริง:</label>
-        <input type="text" id="fname" name="firstname" required />
-        <label for="lname">นามสกุล:</label>
-        <input type="text" id="lname" name="lastname" required /><br />
-        <label for="email">อีเมล:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="born">วันเกิด:</label>
-        <input type="date" id="born_id" name="born" required />
+    <section class="card section">
+      <h1 class="title">Contact Us</h1>
+      <p>กรุณากรอกข้อมูลเพื่อติดต่อ Shopee</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="card section">
+      <form class="contact-form">
+
+        <fieldset>
+          <legend>ข้อมูลส่วนตัว</legend>
+
+          <label>ชื่อจริง</label>
+          <input type="text" required />
+
+          <label>นามสกุล</label>
+          <input type="text" required />
+
+          <label>อีเมล</label>
+          <input type="email" required />
+
+          <label>วันเกิด</label>
+          <input type="date" required />
+        </fieldset>
 
         <fieldset>
           <legend>เพศ</legend>
-          <input type="radio" id="male" name="gender" />
-          <label for="male">ชาย</label>
-          <input type="radio" id="female" name="gender" />
-          <label for="female">หญิง</label>
-          <input type="radio" id="other" name="gender" />
-          <label for="other">อื่นๆ</label>
+          <label><input type="radio" name="gender" /> ชาย</label>
+          <label><input type="radio" name="gender" /> หญิง</label>
+          <label><input type="radio" name="gender" /> อื่นๆ</label>
         </fieldset>
 
-        <label for="country">ประเทศ:</label>
-        <select name="CT" id="country">
-          <option value="">--เลือกประเทศ--</option></select
-        ><br />
+        <label>ประเทศ</label>
+        <select>
+          <option>-- เลือกประเทศ --</option>
+          <option>Thailand</option>
+          <option>Japan</option>
+          <option>Korea</option>
+        </select>
 
-        <label for="information">ข้อมูลเพิ่มเติม:</label><br />
-        <textarea
-          name="information"
-          id="info"
-          style="width: 400px; height: 80px"
-        ></textarea
-        ><br />
+        <label>ข้อมูลเพิ่มเติม</label>
+        <textarea rows="4"></textarea>
 
-        <input type="checkbox" id="accept" name="ยอมรับ" />
-        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
-      </fieldset>
-      <button type="submit">ส่งข้อมูล</button>
-      <button type="reset">ยกเลิก</button>
+        <fieldset>
+          <input type="checkbox" required />
+          ฉันยอมรับเงื่อนไขการใช้บริการ
+        <div>
+          <button class="btn" type="submit">ส่งข้อมูล</button>
+          <button class="btn" type="reset">ยกเลิก</button>
+        </div>
+        </fieldset>
+      </form>
+    </section>
     <p><h3>Google map</h3></p>
         <img src="images/Google map.png" alt="Google map" width="500px">
         <p>Address: Singha Complex, 1788 Phetchaburi Rd, Bangkapi, Huai Khwang, Bangkok 10310</p>
         <!--Contact in other Platform-->
-    <a href="https://www.facebook.com/shopeeth/"><img src="images/Facebook_Logo_(2019).png.webp" alt="Facebook Logo" width="50px"></a >
+        <a href="https://www.facebook.com/shopeeth/"><img src="images/Facebook_Logo_(2019).png.webp" alt="Facebook Logo" width="50px"></a >
     <figcaption>Contact Facebook</figcaption>
-    <nav>
-      <ul>
-        <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="about.html">เกี่ยวกับ</a></li>
-        <li><a href="services.html">บริการ</a></li>
-        <li><a href="contact.html">ติดต่อ</a></li>
-      </ul>
-    </nav>
-    <footer>© 2025 Shopee. All Rights Reserved</footer>
-</body>
+    </main>
+    <footer id="footer">© 2025 Shopee. All Rights Reserved</footer>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </body>
 </html>
