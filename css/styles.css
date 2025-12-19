@@ -141,8 +141,8 @@ nav a:hover {
   max-width: 900px;
   margin: auto;
   background: linear-gradient(rgba(238, 77, 45, 0.85), rgba(238, 77, 45, 0.85)),
-    url("images/banner.jpg");
-  background-size: cover;
+    url("/my-business-web/images/cr7.webp");
+  background-size: cover, cover, cover;
   background-position: center;
   color: #fff;
   padding: 3rem;
